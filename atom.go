@@ -20,7 +20,7 @@ type AtomPerson struct {
 
 type AtomSummary struct {
 	XMLName xml.Name `xml:"summary"`
-	Content string   `xml:",chardata"`
+	Content string   `xml:",cdata"`
 	Type    string   `xml:"type,attr"`
 }
 
@@ -90,7 +90,7 @@ type Atom struct {
 func newAtomEntry(i *Item) *AtomEntry {
 	id := i.Id
 	// assume the description is html
-	c := &AtomContent{Content: i.Description, Type: "html"}
+	c := &AtomSummary{Content: i.Description, Type: "html"}
 
 	if len(id) == 0 {
 		// if there's no id set, try to create one, either from data or just a uuid
@@ -113,7 +113,7 @@ func newAtomEntry(i *Item) *AtomEntry {
 	x := &AtomEntry{
 		Title:   i.Title,
 		Link:    &AtomLink{Href: i.Link.Href, Rel: i.Link.Rel, Type: i.Link.Type},
-		Content: c,
+		Summary: c,
 		Id:      id,
 		Updated: anyTimeFormat(time.RFC3339, i.Updated, i.Created),
 	}

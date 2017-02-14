@@ -21,8 +21,8 @@ var atomOutput = `<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.
     <title>Limiting Concurrency in Go</title>
     <updated>2013-01-16T21:52:35-05:00</updated>
     <id>tag:jmoiron.net,2013-01-16:/blog/limiting-concurrency-in-go/</id>
-    <content type="html">A discussion on controlled parallelism in golang</content>
     <link href="http://jmoiron.net/blog/limiting-concurrency-in-go/"></link>
+    <summary type="html"><![CDATA[A discussion on controlled parallelism in golang]]></summary>
     <author>
       <name>Jason Moiron</name>
       <email>jmoiron@jmoiron.net</email>
@@ -32,29 +32,29 @@ var atomOutput = `<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.
     <title>Logic-less Template Redux</title>
     <updated>2013-01-16T21:52:35-05:00</updated>
     <id>tag:jmoiron.net,2013-01-16:/blog/logicless-template-redux/</id>
-    <content type="html">More thoughts on logicless templates</content>
     <link href="http://jmoiron.net/blog/logicless-template-redux/"></link>
+    <summary type="html"><![CDATA[More thoughts on logicless templates]]></summary>
   </entry>
   <entry>
     <title>Idiomatic Code Reuse in Go</title>
     <updated>2013-01-16T21:52:35-05:00</updated>
     <id>tag:jmoiron.net,2013-01-16:/blog/idiomatic-code-reuse-in-go/</id>
-    <content type="html">How to use interfaces &lt;em&gt;effectively&lt;/em&gt;</content>
     <link href="http://jmoiron.net/blog/idiomatic-code-reuse-in-go/"></link>
+    <summary type="html"><![CDATA[How to use interfaces <em>effectively</em>]]></summary>
   </entry>
   <entry>
     <title>Never Gonna Give You Up Mp3</title>
     <updated>2013-01-16T21:52:35-05:00</updated>
     <id>tag:example.com,2013-01-16:/RickRoll.mp3</id>
-    <content type="html">Never gonna give you up - Never gonna let you down.</content>
     <link href="http://example.com/RickRoll.mp3" rel="enclosure" type="audio/mpeg" length="123456"></link>
+    <summary type="html"><![CDATA[Never gonna give you up - Never gonna let you down.]]></summary>
   </entry>
   <entry>
     <title>String formatting in Go</title>
     <updated>2013-01-16T21:52:35-05:00</updated>
     <id>tag:example.com,2013-01-16:/strings</id>
-    <content type="html">How to use things like %s, %v, %d, etc.</content>
     <link href="http://example.com/strings"></link>
+    <summary type="html"><![CDATA[How to use things like %s, %v, %d, etc.]]></summary>
   </entry>
 </feed>`
 
